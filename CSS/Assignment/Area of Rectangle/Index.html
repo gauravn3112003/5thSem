@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Area of Rectangle</title>
+  </head>
+  <body></body>
+  <script>
+    let Rectangle = {
+      length: parseFloat(prompt("Enter the Length :")),
+      breadth: parseFloat(prompt("Enter the Breadth :")),
+    };
+    function display() {
+      document.write("Area Of Rectangle <br/><br/>");
+      document.write("Length of rectangle : " + Rectangle.length + " CM <br/>");
+      document.write(
+        "Breadth of rectangle : " + Rectangle.breadth + " CM <br/>"
+      );
+      document.write(
+        "Area of Rectangle : " + Rectangle.length * Rectangle.breadth + "<br/>"
+      );
+    }
+    display();
+  </script>
+</html>

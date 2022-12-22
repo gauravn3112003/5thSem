@@ -1,0 +1,33 @@
+<html>
+<head>
+ <title>Arrays!!!</title>
+ <script type="text/javascript">
+  var languages = new Array("C", "C++", "HTML", "Java", "VB");
+  Array.prototype.displayItems=function(){
+   for (i=0;i<this.length;i++){
+    document.write(this[i] + "<br />");
+   }
+  } 
+  document.write("Programming lanugages array<br />");
+  languages.displayItems();
+  document.write("<br />The number of items in languages array is " +  languages.length + "<br />");
+  document.write("<br />The SORTED languages array<br />");
+  languages.sort();
+  languages.displayItems();
+  document.write("<br />The REVERSED languages array<br />");
+  languages.reverse();
+  languages.displayItems();
+  document.write("<br />The languages array after REMOVING the LAST item<br />");
+  languages.pop();
+  languages.displayItems();
+   document.write("<br />THE languages array after PUSH<br />");
+   languages.push("JavaScript");
+  languages.displayItems();
+   document.write("<br />The languages array after SHIFT<br />");
+   languages.shift();
+  languages.displayItems();
+ </script>
+</head>
+<body>
+</body>
+</html>

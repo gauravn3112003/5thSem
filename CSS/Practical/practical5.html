@@ -1,0 +1,17 @@
+<html>
+  <head> </head>
+  <body>
+    <p>Click the button to see result</p>
+    <form>
+      <label for="name">Name :</label>
+      <input type="text" name="name" id="name" />
+      <input type="button" onclick="sayHello()" value="SUBMIT" />
+    </form>
+  </body>
+  <script type="text/javascript">
+    function sayHello() {
+      let name = document.getElementById("name").value;
+      alert("Hello " + name);
+    }
+  </script>
+</html>
