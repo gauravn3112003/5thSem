@@ -42,5 +42,3 @@ public class Practical14
          
     }
 }
-
-create table designation (code int primary key auto_increment, title char(35) not null unique);
