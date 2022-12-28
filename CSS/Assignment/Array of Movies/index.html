@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Array Of Movies</title>
+  </head>
+  <body></body>
+
+  <script>
+    let movie = ["KGF", "RRR", "3 Idiots", "Rudra"];
+
+    function display(params) {
+      for (let index = 0; index < movie.length; index++) {
+        const element = movie[index];
+        document.write("(" + index + ")" + element + " ");
+      }
+    }
+document.write("Original Array <br/>")
+    display();
+
+    movie.push("Brhmastra","Shamshera")
+    document.write("<br/><br/> After push method <br/>")
+    display();
+
+    movie.pop()
+    document.write("<br/><br/> After POP method <br/>")
+    display();
+
+  </script>
+</html>

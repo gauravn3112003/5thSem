@@ -1,0 +1,92 @@
+<!-- 1. Session Cookies -->
+<!-- <html>
+  <head>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            
+          display: flex;
+          align-items: center;
+          justify-content: center;
+            position: relative;
+        }
+      .Center{
+        padding: 20px;
+          width: 300px;
+          height: auto;
+          color: white;
+          position: absolute;
+          border-radius: 10px;
+          background-color: rgb(0, 0, 229);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Center">
+      Enter your name
+      <input
+        type="text"
+        id="myname"
+        placeholder="Enter Name"
+        onchange="createCookie()"
+      />
+    </div>
+  </body>
+  <script>
+    function createCookie() {
+      var name = document.getElementById("myname").value;
+      document.cookie = "name=" + name + ";";
+      alert("Cookie Written..");
+    }
+  </script>
+</html> -->
+
+<!-- persistent cookies -->
+<html>
+  <head>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .Center {
+        padding: 20px;
+        width: 300px;
+        height: auto;
+        color: white;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 229);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Center">
+      Enter your name
+      <input
+        type="text"
+        id="myname"
+        placeholder="Enter Name"
+        onchange="createCookie()"
+      />
+    </div>
+  </body>
+  <script>
+    function createCookie() {
+      var name = document.getElementById("myname").value;
+      var date = new Date();
+      var days = 2;
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      var expires = date.toGMTString();
+
+      document.cookie = "name=" + name + ";expires=" + expires + ";";
+      alert("Cookie Written..");
+    }
+  </script>
+</html>
